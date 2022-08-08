@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Gassing Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            text-align: center;
+        }
+        h1{
+            font-size: 48px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 700;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .player2{
+            display: none;
+        }
+        .box{
+            width: 300px;
+            background: #95a5a6;
+            text-align: center;
+            padding: 20px 10px;
+            margin: 0 auto;
+            box-shadow: 2px 2px 9px 3px rgba(0,0,0,0.75);
+             -webkit-box-shadow: 2px 2px 9px 3px rgba(0,0,0,0.75);
+            -moz-box-shadow: 2px 2px 9px 3px rgba(0,0,0,0.75);
+            border-radius: 10px;
+        }
+        .plr{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 24px;
+            font-weight: 500;
+        }
+        .error{
+            margin-top: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 28px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <h1>Number Gassing Game</h1>
+    <div class="player1">
+        <div class="box">
+        <h2 class="plr">Player One</h2>
+        <input class="player__one__input" type="password">
+        <button class="player__one__btn">check</button>
+
+        </div>
+    </div>
+
+   <div class="player2">
+       <div class="box">
+        <h2 class="plr">Player Two</h2>
+        <input class="player__two__input" type="text">
+        <button class="player__two__btn">check</button>
+       </div>
+      
+   </div>
+   <h2 class="error"></h2>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
